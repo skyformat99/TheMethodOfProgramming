@@ -8,19 +8,29 @@
 
 #include <stdio.h>
 
+#include "RotateString.h"
+#include "ContainString.h"
+
 void testString()
 {
-    char s[10] = "abcdef";
-    //    LeftRotateString(s, 6, 7);
-    threeStepRotateString(s, 6, 2);
+//    char s[10] = "abcdef";
+//        leftRotateString(s, 7);
+//    threeStepRotateString(s, 2);
+    
+    char A[10] = "abcdbac";
+    char B[3] = "acc";
+//    containString(A, B);
+    firstHashSortContainString(A, B);
+    
+    
 }
 
 int main(int argc, const char * argv[])
 {
     // insert code here...
     
-    testString();
-    
+//    testString();
+     
     return 0;
 }
 

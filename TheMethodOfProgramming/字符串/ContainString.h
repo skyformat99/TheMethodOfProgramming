@@ -17,4 +17,13 @@
  *  （这里字符串全部为小写或者大写）
  */
 
+/**
+ * Method 1. 逐一比较法 - 时间复杂：O(n * m)，空间复杂度O(1)
+ */
+void containString(char* a,char* b);
+
+/**
+ * Method 2.先哈希排序，再比较 - “最好的方法”，时间复杂度O(n + m)，空间复杂度O(1)
+ */
+void firstHashSortContainString(char* a,char* b);
 #endif /* ContainString_h */

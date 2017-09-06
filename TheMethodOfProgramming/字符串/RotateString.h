@@ -20,13 +20,13 @@
 
 
 /**
- *  Method 1. 暴力移位法 - 时间复杂度为O(m n)，空间复杂度为O(1)
+ *  Method 1. 暴力移位法 - 时间复杂度为O(m * n)，空间复杂度为O(1)
  */
-void leftRotateString(char* s, int n, int m);
+void leftRotateString(char* s, int m);
 
 /**
  *  Method 2. 三步反转法 - 时间复杂度为O(n)，空间复杂度为O(1)
  */
-void threeStepRotateString(char* s,int n,int m);
+void threeStepRotateString(char* s, int m);
 
 #endif /* RotateString_h */

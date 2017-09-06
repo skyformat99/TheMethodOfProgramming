@@ -7,10 +7,9 @@
 //
 
 #include "RotateString.h"
+#include <string.h>
 
-/**
- *  Method 1. 暴力移位法 - 时间复杂度为O(m n)，空间复杂度为O(1)
- */
+#pragma mark - Method 1. 暴力移位法 - 时间复杂度为O(m * n)，空间复杂度为O(1)
 void leftShiftOne(char* s, int n)
 {
     char t = s[0];  //保存第一个字符
@@ -21,8 +20,9 @@ void leftShiftOne(char* s, int n)
     s[n - 1] = t;
 }
 
-void leftRotateString(char* s, int n, int m)
+void leftRotateString(char* s, int m)
 {
+    int n = (int)strlen(s);
     m %= n;               //若要左移动大于n位，那么和%n 是等价的
     while (m--)
     {
@@ -32,10 +32,8 @@ void leftRotateString(char* s, int n, int m)
     printf("1. 暴力移位法：%s\n", s);
 }
 
-/**
- *  Method 2. 三步反转法 - 时间复杂度为O(n)，空间复杂度为O(1)
- */
-void reverseString(char* s,int from,int to)
+#pragma mark - Method 2. 三步反转法 - 时间复杂度为O(n)，空间复杂度为O(1)
+void reverseString(char* s, int from, int to)
 {
     while (from < to)
     {
@@ -45,8 +43,9 @@ void reverseString(char* s,int from,int to)
     }
 }
 
-void threeStepRotateString(char* s,int n,int m)
+void threeStepRotateString(char* s, int m)
 {
+    int n = (int)strlen(s);
     m %= n;               //若要左移动大于n位，那么和%n 是等价的
     reverseString(s, 0, m - 1); //反转[0..m - 1]，套用到上面举的例子中，就是X->X^T，即 abc->cba
     reverseString(s, m, n - 1); //反转[m..n - 1]，例如Y->Y^T，即 def->fed
