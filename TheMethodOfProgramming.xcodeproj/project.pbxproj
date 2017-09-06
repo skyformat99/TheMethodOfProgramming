@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B889836A1F5FC66200BDFC2E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B88983691F5FC66200BDFC2E /* main.c */; };
+		B889837C1F5FC71D00BDFC2E /* ContainString.c in Sources */ = {isa = PBXBuildFile; fileRef = B88983781F5FC71D00BDFC2E /* ContainString.c */; };
+		B889837D1F5FC71D00BDFC2E /* RotateString.c in Sources */ = {isa = PBXBuildFile; fileRef = B889837A1F5FC71D00BDFC2E /* RotateString.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		B88983661F5FC66200BDFC2E /* TheMethodOfProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TheMethodOfProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88983691F5FC66200BDFC2E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B88983781F5FC71D00BDFC2E /* ContainString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ContainString.c; sourceTree = "<group>"; };
+		B88983791F5FC71D00BDFC2E /* ContainString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainString.h; sourceTree = "<group>"; };
+		B889837A1F5FC71D00BDFC2E /* RotateString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RotateString.c; sourceTree = "<group>"; };
+		B889837B1F5FC71D00BDFC2E /* RotateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateString.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,21 @@
 		B88983681F5FC66200BDFC2E /* TheMethodOfProgramming */ = {
 			isa = PBXGroup;
 			children = (
+				B88983771F5FC71D00BDFC2E /* 字符串 */,
 				B88983691F5FC66200BDFC2E /* main.c */,
 			);
 			path = TheMethodOfProgramming;
+			sourceTree = "<group>";
+		};
+		B88983771F5FC71D00BDFC2E /* 字符串 */ = {
+			isa = PBXGroup;
+			children = (
+				B889837B1F5FC71D00BDFC2E /* RotateString.h */,
+				B889837A1F5FC71D00BDFC2E /* RotateString.c */,
+				B88983791F5FC71D00BDFC2E /* ContainString.h */,
+				B88983781F5FC71D00BDFC2E /* ContainString.c */,
+			);
+			path = "字符串";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B889836A1F5FC66200BDFC2E /* main.c in Sources */,
+				B889837C1F5FC71D00BDFC2E /* ContainString.c in Sources */,
+				B889837D1F5FC71D00BDFC2E /* RotateString.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +271,7 @@
 				B889836F1F5FC66200BDFC2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

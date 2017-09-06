@@ -8,8 +8,19 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
+void testString()
+{
+    char s[10] = "abcdef";
+    //    LeftRotateString(s, 6, 7);
+    threeStepRotateString(s, 6, 2);
+}
+
+int main(int argc, const char * argv[])
+{
     // insert code here...
-    printf("Hello, World!\n");
+    
+    testString();
+    
     return 0;
 }
+
